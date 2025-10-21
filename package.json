@@ -1,0 +1,47 @@
+{
+  "name": "baskets-store",
+  "version": "1.0.0",
+  "description": "Site e-commerce moderne pour la vente de baskets avec Firebase",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --entry-file=index.html",
+    "build": "echo 'Build completed'",
+    "test": "echo 'No tests specified'",
+    "deploy": "firebase deploy",
+    "serve": "firebase serve",
+    "lint": "eslint *.js",
+    "format": "prettier --write *.js *.css *.html"
+  },
+  "keywords": [
+    "ecommerce",
+    "baskets",
+    "sneakers",
+    "firebase",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Votre Nom",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "firebase": "^9.23.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/votre-username/baskets-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/votre-username/baskets-store/issues"
+  },
+  "homepage": "https://github.com/votre-username/baskets-store#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
