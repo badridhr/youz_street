@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youz_street
+ - Vente de baskets tendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">youz_street
+</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#produits" class="nav-link">Produits</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin.html" class="nav-link">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link cart-icon" id="cart-icon">Panier (<span id="cart-count">0</span>)</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Les baskets qui vous démarquent</h1>
+            <p>Découvrez notre collection exclusive de baskets pour tous les styles</p>
+            <a href="#produits" class="btn btn-primary">Découvrir nos baskets</a>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section class="products" id="produits">
+        <div class="container">
+            <h2>Nos Produits</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Les produits seront ajoutés dynamiquement par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations de contact</h3>
+                    <p><strong>Téléphone:</strong> 01 23 45 67 89</p>
+                    <p><strong>Email:</strong> contact@basketsstore.fr</p>
+                    <p><strong>Adresse:</strong> 123 Rue de la Mode, 75001 Paris</p>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>youz_street
+</h3>
+                    <p>Votre destination pour les baskets tendance et confortables.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Informations légales</h3>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025
+ youz_street
+. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Panier Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Votre Panier</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Les articles du panier seront ajoutés ici -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">0</span> €</p>
+            </div>
+            <button class="btn btn-primary" id="checkout-btn">Commander</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
